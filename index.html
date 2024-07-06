@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+
+    
+
+
+
+.table-2x2, .table-3x3, .table-4x4 {
+	border-collapse: collapse;
+	width: 100%;
+}
+.table-2x2 td {
+   
+	border: 5px solid hsl(120, 77%, 51%);
+	padding: 10px;
+	text-align: center;
+    box-shadow: 15px 15px 5px red;
+}
+
+ .table-3x3 td, .table-4x4 td {
+	border: 1px solid #ddd;
+	padding: 10px;
+	text-align: center;
+    box-shadow: 15px 15px 5px #5900ff;
+    align-content: center;
+}
+
+
+@media only screen and (max-width: 600px) {
+	.table-2x2 {
+		width: 50%;
+        height: 50%;
+        
+	}
+	.table-3x3 {
+		display: none;
+	}
+	.table-4x4 {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 601px) and (max-width: 900px) {
+	.table-2x2 {
+		display: none;
+	}
+	.table-3x3 {
+		width: 50%;
+        height: 50%;
+        
+	}
+	.table-4x4 {
+		display: none;
+	}
+}
+
+@media only screen and (min-width: 901px) {
+	.table-2x2 {
+		display: none;
+	}
+	.table-3x3 {
+		display: none;
+	}
+	.table-4x4 {
+		width: 50%;
+        height: 50%;
+        
+	}
+}
+</style>
+<body>
+
+
+
+
+<table class="table-2x2">
+	<tr>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+		
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+	</tr>
+	<tr>
+       
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+		
+	</tr>
+</table>
+
+<table class="table-3x3">
+	<tr>
+		<td style="background-image: linear-gradient(red,blue); padding: 50px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+	</tr>
+	<tr>
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+	</tr>
+	<tr>
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(350, 100%, 50%),blue); padding: 70px;"></td>
+	</tr>
+</table>
+
+<table class="table-4x4">
+	<tr>
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+	</tr>
+	<tr>
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hwb(62 17% 11%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+	</tr>
+	<tr>
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+	</tr>
+	<tr>
+		<td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(hsl(71, 100%, 50%),blue); padding: 70px;"></td>
+        <td style="background-image: linear-gradient(red,blue); padding: 70px;"></td>
+	</tr>
+</table>
+
+
+
+</html>
